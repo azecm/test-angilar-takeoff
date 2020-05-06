@@ -22,6 +22,6 @@ export class UserIconComponent {
     image: string;
 
     get src() {
-        return `url("/assets/${this.image}")`;
+        return `url("./assets/${this.image}")`;
     }
 }
