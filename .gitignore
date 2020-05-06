@@ -4,7 +4,7 @@
 /dist
 
 # misc
-/package-lock.json
+package-lock.json
 npm-debug.log
 
 # System Files
