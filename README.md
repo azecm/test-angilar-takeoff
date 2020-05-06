@@ -26,3 +26,7 @@ npm run build
 - идет отправка на сервер
 
 данные берутся только из разделов, где выбрано условие
+
+## Посмотреть
+
+https://azecm.github.io/test-angilar-takeoff/

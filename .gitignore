@@ -1,7 +1,7 @@
 # dependencies
 /node_modules
 /.idea
-
+/dist
 
 # misc
 /package-lock.json
