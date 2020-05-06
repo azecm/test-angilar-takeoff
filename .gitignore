@@ -1,10 +1,9 @@
 # dependencies
 /node_modules
 /.idea
-/dist
 
 # misc
-/package-lock.lock
+/package-lock.json
 npm-debug.log
 
 # System Files
