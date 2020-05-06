@@ -1,0 +1,38 @@
+@import "../styles/colors";
+@import "../styles/button-drop";
+
+:host {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  flex-grow: 1;
+}
+
+:host(#{$active}) {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid $add-color;
+}
+
+:host(:not(#{$active})) {
+  color: $top-color;
+}
+
+:host(:hover:not(#{$active})) {
+  border-bottom: 2px solid $active-back;
+}
+
+:host(:hover) {
+  background-color: $active-back;
+}
+
+button {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: 0 none;
+  cursor: pointer;
+  color: inherit;
+  font-weight: inherit;
+}

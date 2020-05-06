@@ -1,0 +1,74 @@
+@import "common";
+
+:host {
+  display: block;
+  padding: 1em 2em;
+}
+
+.body {
+  margin: 0.8em 0;
+}
+
+select {
+
+  padding: 0.5em;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  border: 1px solid silver;
+
+  &:focus {
+    outline: 0 none;
+  }
+
+  &.width-100 {
+    width: 100%;
+  }
+}
+
+
+$i1: 0;
+@each $background, $title, $operator in $colors {
+  $i1: $i1 + 1;
+  :host(.type-#{$i1}) {
+    background-color: $background;
+
+    .title {
+      color: $title;
+    }
+
+    .operator {
+      background-color: $operator;
+    }
+  }
+}
+
+.operator {
+  border-radius: 0.2em;
+  padding: 0.5em 1em;
+  font-size: 0.8rem;
+  margin-right: 1em;
+}
+
+// ===============
+
+.flex {
+  display: flex;
+
+  &-between {
+    justify-content: space-between;
+  }
+}
+
+.col-1 {
+  display: flex;
+  align-items: center;
+  width: 200px;
+
+}
+
+.col-2 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
