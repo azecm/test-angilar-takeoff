@@ -30,3 +30,5 @@ npm run build
 ## Посмотреть
 
 https://azecm.github.io/test-angilar-takeoff/
+
+https://github.com/azecm/test-angilar-takeoff
