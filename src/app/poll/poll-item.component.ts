@@ -7,7 +7,7 @@ import {
     Output,
     ViewEncapsulation
 } from "@angular/core";
-import {EType, PollItem, PollItemEntity, pollTypeName} from "./_common";
+import {EType, PollItem, PollItemEntity, pollTitles, pollTypeName} from "./_common";
 
 
 @Component({
@@ -37,7 +37,7 @@ import {EType, PollItem, PollItemEntity, pollTypeName} from "./_common";
 
             </div>
             <div class="col-2 flex flex-between">
-                <action-button type="add" (click)="onAddClick()">Добавить тип</action-button>
+                <action-button type="add" (click)="onAddClick()">Добавить {{buttonText}}</action-button>
                 <action-button type="remove" (click)="onRemoveClick()">Удалить условие</action-button>
             </div>
         </div>
@@ -61,6 +61,10 @@ export class PollItemComponent {
 
     get type() {
         return this.data.type;
+    }
+
+    get buttonText() {
+        return pollTitles[this.type].toLowerCase();
     }
 
     identify(_: number, item: PollItemEntity) {
