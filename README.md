@@ -25,5 +25,5 @@ https://azecm.github.io/test-takeoff-angular/
 ## Аналоги
 
 - https://github.com/azecm/test-takeoff-angular
-- https://github.com/azecm/test-takeoff-vuew
+- https://github.com/azecm/test-takeoff-vue
 - https://github.com/azecm/test-takeoff-react
