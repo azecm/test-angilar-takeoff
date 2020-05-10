@@ -10,25 +10,20 @@ npm run serve
 
 npm run build
 
-## Условия
+## Результат
 
-работает абсолютно корректно от Chrome 67
+- добавить условие
 
-если надо ниже, то возможно потребуется вносить исправления
+- "Протестировать опрос"
 
-## Реультат
-
-нажмите кнопку "Протестировать опрос"
-
-данные отображаются в 
-- броузере
-- консоли
-- идет отправка на сервер
-
-данные берутся только из разделов, где выбрано условие
+- данные берутся только из разделов, где выбрано условие
 
 ## Посмотреть
 
-https://azecm.github.io/test-angilar-takeoff/
+https://azecm.github.io/test-takeoff-angular/
 
-https://github.com/azecm/test-angilar-takeoff
+## Аналоги
+
+- https://github.com/azecm/test-takeoff-angular
+- https://github.com/azecm/test-takeoff-vuew
+- https://github.com/azecm/test-takeoff-react
